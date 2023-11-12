@@ -1,14 +1,18 @@
 <!--
-TODO
+-TODO
 -=============================================================================
--
--2: change the sub-divs in main element to sections
--3: add an ID to section "search..." for navbar to work correctly
--4: change div "benifits" to be an aside element
--5: change div "footer" to be a footer element
--6: change h2 element in footer to an h4
--7: attempt to change the "hero" div to an image element *without losing functionality*
--
+-DONE-1:change website title
+-DONE-2:change the "header" div to header element
+-DONE-3:change the div inside header to a nav element
+-DONE-4: change "content" to main element
+-DONE-5: change the sub-divs in main element to sections
+-DONE-6: add an ID to section "search..." for navbar to work correctly
+-7: change div "benifits" to be an aside element
+-8: change the divs inside the aside to sections
+-9: change div "footer" to be a footer element
+-10: change h2 element in footer to an h4
+-11: attempt to change the "hero" div to an image element *without losing functionality*
+-12: change class names of "float.left/right" to be more discriptive
 -
 -=============================================================================
 -->
@@ -19,15 +23,15 @@ TODO
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Horiseon</title> <!-- changed website title to Horiseon -->
+    <title>Horiseon</title> <!-- 1 -->
 </head>
 
 <body> 
-    <header> <!-- changed this div to be a header element -->
-        <h1>Hori<span class="seo">seo</span>n</h1> <!-- maybe change the span to an <em> -->
-        <nav> <!--2: made this div element a nav element -->
+    <header> <!-- 2 -->
+        <h1>Hori<span class="seo">seo</span>n</h1>
+        <nav> <!-- 3 -->
             <ul>
-                <li> <!--3: this href needs an ID to link to: solution below-->
+                <li> <!-- 6 -->
                     <a href="#search-engine-optimization">Search Engine Optimization</a> 
                 </li>
                 <li>
@@ -40,28 +44,28 @@ TODO
         </nav>
     </header>
     <div class="hero"></div> <!-- this div needs to be an img element, the reference is in the css, also change the name-->
-    <main> <!-- changed to main element -->
-        <div class="search-engine-optimization"> <!-- this div needs to be a section, add an ID for link to work-->
+    <main> <!-- 4 -->
+        <section class="aboutUs" id="search-engine-optimization"> <!-- 5, 6 -->
             <img src="./assets/images/search-engine-optimization.jpg" class="float-left" />
             <h2>Search Engine Optimization</h2>
             <p>
                 The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
             </p>
-        </div>
-        <div id="online-reputation-management" class="online-reputation-management"> <!-- this div needs to be a section-->
+        </section>
+        <section class="aboutUs" id="online-reputation-management"> <!-- 5 -->
             <img src="./assets/images/online-reputation-management.jpg" class="float-right" />
             <h2>Online Reputation Management</h2>
             <p>
                 The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
             </p>
-        </div>
-        <div id="social-media-marketing" class="social-media-marketing"> <!-- this div needs to be a section-->
+        </section>
+        <section class="aboutUs" id="social-media-marketing"> <!-- 5 -->
             <img src="./assets/images/social-media-marketing.jpg" class="float-left" />
             <h2>Social Media Marketing</h2>
             <p>
                 Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
             </p>
-        </div>
+        </section>
     </main>
     <div class="benefits"> <!-- this div needs to be an aside -->
         <div class="benefit-lead"> <!-- this div needs to be a section-->
