@@ -1,12 +1,11 @@
 /**
-*TODO
+*TODO (cnt. from html)
 *=============================================================================
-*1: update comments to be more 'seperated' from css code
-*2: organize css into an 'elements > classes > IDs' orientation
-*3: change remaining unnecisary div classes into their proper element refferences
-*4: remove unnecisary/repetative refferences ie: header h1 -> h1 || .benifit-brand/lead/cost -> .benifit
-*5: organize h1,h2,h3,h4
-*6:
+*13: update comments to be more 'seperated' from css code
+*14: organize css into an 'elements > classes > IDs' orientation
+*DONE*15: change remaining unnecisary div classes into their proper element refferences
+*DONE*16: remove unnecisary/repetative refferences ie: header h1 -> h1 || .benifit-brand/lead/cost -> .benifit
+*
 *=============================================================================
 */
 
@@ -21,7 +20,7 @@ body {
 }
 
 /* --sets the padding, font familly, background color, and text color of the header-- */
-/* changed the class refference ".header" to an element refference */
+/* 2 */
 header { 
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -30,20 +29,20 @@ header {
 }
 
 /* --sets the h1's font size and makes it apear inline--  */
-/* changed the class refference ".header" to an element refference */
+/* 2 */
 header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
 /* --sets the color of some of the refferenced letters in the h1 'logo'-- */
-/* changed the class refference ".header" to an element refference */
+/* 2 */
 header h1 .seo {
     color: #d9dcd6;
 }
 
 /* --sets the dimentions, font size and font familly for the navbar in the header-- */
-/* changed the class refference ".header" to an element refference, changed div to nav */
+/* 2, 3 */
 header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -53,13 +52,13 @@ header nav {
 }
 
 /* --removes the bullet point from the navbar list-- */
-/* changed the class refference ".header" to an element refference, changed div to nav */
+/* 2, 3 */
 header nav ul {
     list-style-type: none;
 }
 
 /* --sets the navbar to be inline, and sets the margins-- */
-/* changed the class refference ".header" to an element refference, changed div to nav */
+/* 2, 3 */
 header nav ul li {
     display: inline-block;
     margin-left: 25px; 
@@ -76,6 +75,7 @@ p {
     font-size: 16px;
 }
 
+/* --sets the background image above the main part-- */
 .hero {
     height: 800px;
     width: 100%;
@@ -85,6 +85,7 @@ p {
     background-position: center;
 }
 
+/* --sets the background image above the main part-- */
 .float-left {
     float: left;
     margin-right: 25px;
@@ -95,12 +96,14 @@ p {
     margin-left: 25px;
 }
 
+/* 4 */
 main {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/* 7 */
 aside {
     margin-right: 20px;
     padding: 20px;
@@ -112,6 +115,7 @@ aside {
     background-color: #2589bd;
 }
 
+/* 8 */
 .benefit {
     margin-bottom: 32px;
     color: #ffffff;
@@ -122,12 +126,14 @@ aside {
     text-align: center;
 }
 
+/* 8 */
 .benefit img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
+/* 5 */
 .aboutUs{
     margin-bottom: 20px;
     padding: 50px;
@@ -137,16 +143,18 @@ aside {
     color: #ffffff;
 }
 
+/* 5 */
 .aboutUs img {
     max-height: 200px;
 }
 
-
+/* 5 */
 .aboutUs h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
+/* 9 */
 footer {
     padding: 30px;
     clear: both;
@@ -154,6 +162,7 @@ footer {
     text-align: center;
 }
 
+/* 9, 10 */
 footer h4 {
     font-size: 20px;
 }
