@@ -85,16 +85,18 @@ p {
     background-position: center;
 }
 
-/* --sets the background image above the main part-- */
-.float-left {
+/* --sets the right margin for the images that need the be on the right in the main element-- */
+.aboutus-left {
     float: left;
     margin-right: 25px;
 }
 
-.float-right {
+/* --sets the left margin for the images that need the be on the left in the main element-- */
+.aboutus-right {
     float: right;
     margin-left: 25px;
 }
+
 
 /* 4 */
 main {
