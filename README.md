@@ -7,7 +7,7 @@ This is the README for the first challenge of my coding bootcamp. This Repositor
 Through this challenge, I was able to learn how to work to modify a website to specific criteria, work with Github, practice HTML and CSS, and how to make a website more accessible for assistive technologies, like screen readers.
 
 ### Link to Deployed REPO
-[Click me!]()
+[Click me!](https://spikey1289.github.io/Challenge-1/)
 
 
 ### Screenshot of Finished Website
