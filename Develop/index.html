@@ -1,9 +1,9 @@
 <!--
 -TODO
 -=============================================================================
--DONE-1:change website title
--DONE-2:change the "header" div to header element
--DONE-3:change the div inside header to a nav element
+-DONE-1: change website title
+-DONE-2: change the "header" div to header element
+-DONE-3: change the div inside header to a nav element
 -DONE-4: change "content" to main element
 -DONE-5: change the sub-divs in main element to sections
 -DONE-6: add an ID to section "search..." for navbar to work correctly
@@ -11,9 +11,9 @@
 -DONE-8: change the divs inside the aside to sections
 -DONE-9: change div "footer" to be a footer element
 -DONE-10: change h2 element in footer to an h4
--11: attempt to change the "hero" div (change the name) to an image element *without losing functionality*
--12: change class names of "float.left/right" to be more discriptive
--13: add alt attributes for all images
+-DONE-11: change hero div to a figure
+-DONE-12: change class names of "float.left/right" to be more discriptive
+-DONE-13: add alt attributes for all images
 -=============================================================================
 -->
 
@@ -27,6 +27,8 @@
 </head>
 
 <body> 
+
+    <!-- creates the Horiseon header bar and navigation links -->
     <header> <!-- 2 -->
         <h1>Hori<span class="seo">seo</span>n</h1>
         <nav> <!-- 3 -->
@@ -44,11 +46,11 @@
         </nav>
     </header>
 
-    <div class="hero"></div> <!-- this div needs to be an img element, the reference is in the css, also change the name-->
+    <figure class="HoriseonMeeting"></figure><!-- 11 -->
 
     <main> <!-- 4 -->
         <section class="aboutUs" id="search-engine-optimization"> <!-- 5, 6 -->
-            <img src="./assets/images/search-engine-optimization.jpg" class="aboutus-left" alt="notepad with the abreviation for search engine optimization written on it"/> <!-- 13 -->
+            <img src="./assets/images/search-engine-optimization.jpg" class="aboutus-left" alt="notepad with the abreviation for search engine optimization written on it"/> <!-- 12, 13 -->
             <h2>Search Engine Optimization</h2>
             <p>
                 The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
@@ -56,7 +58,7 @@
         </section>
 
         <section class="aboutUs" id="online-reputation-management"> <!-- 5 -->
-            <img src="./assets/images/online-reputation-management.jpg" class="aboutus-right" alt="person working on computer, managing their online reputation"/> <!-- 13 -->
+            <img src="./assets/images/online-reputation-management.jpg" class="aboutus-right" alt="person working on computer, managing their online reputation"/> <!-- 12, 13 -->
             <h2>Online Reputation Management</h2>
             <p>
                 The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
@@ -64,7 +66,7 @@
         </section>
 
         <section class="aboutUs" id="social-media-marketing"> <!-- 5 -->
-            <img src="./assets/images/social-media-marketing.jpg" class="aboutus-left" alt="people around table discussing social media marketing"/> <!-- 13 -->
+            <img src="./assets/images/social-media-marketing.jpg" class="aboutus-left" alt="people around table discussing social media marketing"/> <!-- 12, 13 -->
             <h2>Social Media Marketing</h2>
             <p>
                 Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
